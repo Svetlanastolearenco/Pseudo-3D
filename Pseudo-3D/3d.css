@@ -1,0 +1,463 @@
+@charset "UTF-8";
+#row {
+  background-image: -webkit-gradient(linear, left top, right top, from(#222), to(black));
+  background-image: linear-gradient(90deg, #222, black);
+  /**так как дочерние элементы находятся в абсолюте и выведены из потока, то высота данного div равна 0, следовательно градиент не будет виден и экран останется белого цвета. Дочерние элементы будут выравнены по верхнему краю*/
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /*div отцентровывается относительно центра экрана и срабатывает градиент*/
+  -webkit-perspective: 1400px;
+          perspective: 1400px;
+}
+
+#row div {
+  /*после компиляции селектор будет прописан как #row div{}*/
+  width: 200px;
+  height: 200px;
+  background-color: brown;
+  text-align: center;
+  line-height: 200px;
+  font-size: 60px;
+  /*элементы ведут себя как блоки и выстраиваются по вертикали по одному*/
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  /*элементы отцентровываются по вертикали относительно родительского элемента, выстраиваются в один ряд*/
+  /*данная конструкция выводит набор стилей заданное количество раз, то есть 36*/
+  /*данная конструкция выводит набор стилей заданное количество раз, то есть 36*/
+  /*данная конструкция выводит набор стилей заданное количество раз, то есть 36*/
+  /*данная конструкция выводит набор стилей заданное количество раз, то есть 36*/
+  /*данная конструкция выводит набор стилей заданное количество раз, то есть 36*/
+  /*данная конструкция выводит набор стилей заданное количество раз, то есть 36*/
+  /*данная конструкция выводит набор стилей заданное количество раз, то есть 36*/
+  /*данная конструкция выводит набор стилей заданное количество раз, то есть 36*/
+  /*данная конструкция выводит набор стилей заданное количество раз, то есть 36*/
+  /*данная конструкция выводит набор стилей заданное количество раз, то есть 36*/
+  /*данная конструкция выводит набор стилей заданное количество раз, то есть 36*/
+  /*данная конструкция выводит набор стилей заданное количество раз, то есть 36*/
+  /*данная конструкция выводит набор стилей заданное количество раз, то есть 36*/
+  /*данная конструкция выводит набор стилей заданное количество раз, то есть 36*/
+  /*данная конструкция выводит набор стилей заданное количество раз, то есть 36*/
+  /*данная конструкция выводит набор стилей заданное количество раз, то есть 36*/
+  /*данная конструкция выводит набор стилей заданное количество раз, то есть 36*/
+  /*данная конструкция выводит набор стилей заданное количество раз, то есть 36*/
+  /*данная конструкция выводит набор стилей заданное количество раз, то есть 36*/
+  /*данная конструкция выводит набор стилей заданное количество раз, то есть 36*/
+  /*данная конструкция выводит набор стилей заданное количество раз, то есть 36*/
+  /*данная конструкция выводит набор стилей заданное количество раз, то есть 36*/
+  /*данная конструкция выводит набор стилей заданное количество раз, то есть 36*/
+  /*данная конструкция выводит набор стилей заданное количество раз, то есть 36*/
+  /*данная конструкция выводит набор стилей заданное количество раз, то есть 36*/
+  /*данная конструкция выводит набор стилей заданное количество раз, то есть 36*/
+  /*данная конструкция выводит набор стилей заданное количество раз, то есть 36*/
+  /*данная конструкция выводит набор стилей заданное количество раз, то есть 36*/
+  /*данная конструкция выводит набор стилей заданное количество раз, то есть 36*/
+  /*данная конструкция выводит набор стилей заданное количество раз, то есть 36*/
+  /*данная конструкция выводит набор стилей заданное количество раз, то есть 36*/
+  /*данная конструкция выводит набор стилей заданное количество раз, то есть 36*/
+  /*данная конструкция выводит набор стилей заданное количество раз, то есть 36*/
+  /*данная конструкция выводит набор стилей заданное количество раз, то есть 36*/
+  /*данная конструкция выводит набор стилей заданное количество раз, то есть 36*/
+  /*данная конструкция выводит набор стилей заданное количество раз, то есть 36*/
+}
+
+#row div:nth-child(1) {
+  /*знак & указывает где должен быть вставлен родительский селектор, то есть div*/
+  -webkit-transform: translateZ(-100px) translateX(0px) rotateY(-45deg);
+          transform: translateZ(-100px) translateX(0px) rotateY(-45deg);
+  background-color: #9b2727;
+  z-index: -1;
+  /*значение z-index будет увеличиваться от -1 до -36*/
+  -webkit-box-shadow: 0 0 3px 5px #1c1c1c;
+          box-shadow: 0 0 3px 5px #1c1c1c;
+}
+
+#row div:nth-child(2) {
+  /*знак & указывает где должен быть вставлен родительский селектор, то есть div*/
+  -webkit-transform: translateZ(-200px) translateX(100px) rotateY(-45deg);
+          transform: translateZ(-200px) translateX(100px) rotateY(-45deg);
+  background-color: #912525;
+  z-index: -2;
+  /*значение z-index будет увеличиваться от -1 до -36*/
+  -webkit-box-shadow: 0 0 3px 5px #151515;
+          box-shadow: 0 0 3px 5px #151515;
+}
+
+#row div:nth-child(3) {
+  /*знак & указывает где должен быть вставлен родительский селектор, то есть div*/
+  -webkit-transform: translateZ(-300px) translateX(200px) rotateY(-45deg);
+          transform: translateZ(-300px) translateX(200px) rotateY(-45deg);
+  background-color: #872222;
+  z-index: -3;
+  /*значение z-index будет увеличиваться от -1 до -36*/
+  -webkit-box-shadow: 0 0 3px 5px #0f0f0f;
+          box-shadow: 0 0 3px 5px #0f0f0f;
+}
+
+#row div:nth-child(4) {
+  /*знак & указывает где должен быть вставлен родительский селектор, то есть div*/
+  -webkit-transform: translateZ(-400px) translateX(300px) rotateY(-45deg);
+          transform: translateZ(-400px) translateX(300px) rotateY(-45deg);
+  background-color: #7c2020;
+  z-index: -4;
+  /*значение z-index будет увеличиваться от -1 до -36*/
+  -webkit-box-shadow: 0 0 3px 5px #090909;
+          box-shadow: 0 0 3px 5px #090909;
+}
+
+#row div:nth-child(5) {
+  /*знак & указывает где должен быть вставлен родительский селектор, то есть div*/
+  -webkit-transform: translateZ(-500px) translateX(400px) rotateY(-45deg);
+          transform: translateZ(-500px) translateX(400px) rotateY(-45deg);
+  background-color: #721d1d;
+  z-index: -5;
+  /*значение z-index будет увеличиваться от -1 до -36*/
+  -webkit-box-shadow: 0 0 3px 5px #020202;
+          box-shadow: 0 0 3px 5px #020202;
+}
+
+#row div:nth-child(6) {
+  /*знак & указывает где должен быть вставлен родительский селектор, то есть div*/
+  -webkit-transform: translateZ(-600px) translateX(500px) rotateY(-45deg);
+          transform: translateZ(-600px) translateX(500px) rotateY(-45deg);
+  background-color: #681a1a;
+  z-index: -6;
+  /*значение z-index будет увеличиваться от -1 до -36*/
+  -webkit-box-shadow: 0 0 3px 5px black;
+          box-shadow: 0 0 3px 5px black;
+}
+
+#row div:nth-child(7) {
+  /*знак & указывает где должен быть вставлен родительский селектор, то есть div*/
+  -webkit-transform: translateZ(-700px) translateX(600px) rotateY(-45deg);
+          transform: translateZ(-700px) translateX(600px) rotateY(-45deg);
+  background-color: #5e1818;
+  z-index: -7;
+  /*значение z-index будет увеличиваться от -1 до -36*/
+  -webkit-box-shadow: 0 0 3px 5px black;
+          box-shadow: 0 0 3px 5px black;
+}
+
+#row div:nth-child(8) {
+  /*знак & указывает где должен быть вставлен родительский селектор, то есть div*/
+  -webkit-transform: translateZ(-800px) translateX(700px) rotateY(-45deg);
+          transform: translateZ(-800px) translateX(700px) rotateY(-45deg);
+  background-color: #541515;
+  z-index: -8;
+  /*значение z-index будет увеличиваться от -1 до -36*/
+  -webkit-box-shadow: 0 0 3px 5px black;
+          box-shadow: 0 0 3px 5px black;
+}
+
+#row div:nth-child(9) {
+  /*знак & указывает где должен быть вставлен родительский селектор, то есть div*/
+  -webkit-transform: translateZ(-900px) translateX(800px) rotateY(-45deg);
+          transform: translateZ(-900px) translateX(800px) rotateY(-45deg);
+  background-color: #4a1313;
+  z-index: -9;
+  /*значение z-index будет увеличиваться от -1 до -36*/
+  -webkit-box-shadow: 0 0 3px 5px black;
+          box-shadow: 0 0 3px 5px black;
+}
+
+#row div:nth-child(10) {
+  /*знак & указывает где должен быть вставлен родительский селектор, то есть div*/
+  -webkit-transform: translateZ(-1000px) translateX(900px) rotateY(-45deg);
+          transform: translateZ(-1000px) translateX(900px) rotateY(-45deg);
+  background-color: #3f1010;
+  z-index: -10;
+  /*значение z-index будет увеличиваться от -1 до -36*/
+  -webkit-box-shadow: 0 0 3px 5px black;
+          box-shadow: 0 0 3px 5px black;
+}
+
+#row div:nth-child(11) {
+  /*знак & указывает где должен быть вставлен родительский селектор, то есть div*/
+  -webkit-transform: translateZ(-1100px) translateX(1000px) rotateY(-45deg);
+          transform: translateZ(-1100px) translateX(1000px) rotateY(-45deg);
+  background-color: #350e0e;
+  z-index: -11;
+  /*значение z-index будет увеличиваться от -1 до -36*/
+  -webkit-box-shadow: 0 0 3px 5px black;
+          box-shadow: 0 0 3px 5px black;
+}
+
+#row div:nth-child(12) {
+  /*знак & указывает где должен быть вставлен родительский селектор, то есть div*/
+  -webkit-transform: translateZ(-1200px) translateX(1100px) rotateY(-45deg);
+          transform: translateZ(-1200px) translateX(1100px) rotateY(-45deg);
+  background-color: #2b0b0b;
+  z-index: -12;
+  /*значение z-index будет увеличиваться от -1 до -36*/
+  -webkit-box-shadow: 0 0 3px 5px black;
+          box-shadow: 0 0 3px 5px black;
+}
+
+#row div:nth-child(13) {
+  /*знак & указывает где должен быть вставлен родительский селектор, то есть div*/
+  -webkit-transform: translateZ(-1300px) translateX(1200px) rotateY(-45deg);
+          transform: translateZ(-1300px) translateX(1200px) rotateY(-45deg);
+  background-color: #210808;
+  z-index: -13;
+  /*значение z-index будет увеличиваться от -1 до -36*/
+  -webkit-box-shadow: 0 0 3px 5px black;
+          box-shadow: 0 0 3px 5px black;
+}
+
+#row div:nth-child(14) {
+  /*знак & указывает где должен быть вставлен родительский селектор, то есть div*/
+  -webkit-transform: translateZ(-1400px) translateX(1300px) rotateY(-45deg);
+          transform: translateZ(-1400px) translateX(1300px) rotateY(-45deg);
+  background-color: #170606;
+  z-index: -14;
+  /*значение z-index будет увеличиваться от -1 до -36*/
+  -webkit-box-shadow: 0 0 3px 5px black;
+          box-shadow: 0 0 3px 5px black;
+}
+
+#row div:nth-child(15) {
+  /*знак & указывает где должен быть вставлен родительский селектор, то есть div*/
+  -webkit-transform: translateZ(-1500px) translateX(1400px) rotateY(-45deg);
+          transform: translateZ(-1500px) translateX(1400px) rotateY(-45deg);
+  background-color: #0d0303;
+  z-index: -15;
+  /*значение z-index будет увеличиваться от -1 до -36*/
+  -webkit-box-shadow: 0 0 3px 5px black;
+          box-shadow: 0 0 3px 5px black;
+}
+
+#row div:nth-child(16) {
+  /*знак & указывает где должен быть вставлен родительский селектор, то есть div*/
+  -webkit-transform: translateZ(-1600px) translateX(1500px) rotateY(-45deg);
+          transform: translateZ(-1600px) translateX(1500px) rotateY(-45deg);
+  background-color: #020101;
+  z-index: -16;
+  /*значение z-index будет увеличиваться от -1 до -36*/
+  -webkit-box-shadow: 0 0 3px 5px black;
+          box-shadow: 0 0 3px 5px black;
+}
+
+#row div:nth-child(17) {
+  /*знак & указывает где должен быть вставлен родительский селектор, то есть div*/
+  -webkit-transform: translateZ(-1700px) translateX(1600px) rotateY(-45deg);
+          transform: translateZ(-1700px) translateX(1600px) rotateY(-45deg);
+  background-color: black;
+  z-index: -17;
+  /*значение z-index будет увеличиваться от -1 до -36*/
+  -webkit-box-shadow: 0 0 3px 5px black;
+          box-shadow: 0 0 3px 5px black;
+}
+
+#row div:nth-child(18) {
+  /*знак & указывает где должен быть вставлен родительский селектор, то есть div*/
+  -webkit-transform: translateZ(-1800px) translateX(1700px) rotateY(-45deg);
+          transform: translateZ(-1800px) translateX(1700px) rotateY(-45deg);
+  background-color: black;
+  z-index: -18;
+  /*значение z-index будет увеличиваться от -1 до -36*/
+  -webkit-box-shadow: 0 0 3px 5px black;
+          box-shadow: 0 0 3px 5px black;
+}
+
+#row div:nth-child(19) {
+  /*знак & указывает где должен быть вставлен родительский селектор, то есть div*/
+  -webkit-transform: translateZ(-1900px) translateX(1800px) rotateY(-45deg);
+          transform: translateZ(-1900px) translateX(1800px) rotateY(-45deg);
+  background-color: black;
+  z-index: -19;
+  /*значение z-index будет увеличиваться от -1 до -36*/
+  -webkit-box-shadow: 0 0 3px 5px black;
+          box-shadow: 0 0 3px 5px black;
+}
+
+#row div:nth-child(20) {
+  /*знак & указывает где должен быть вставлен родительский селектор, то есть div*/
+  -webkit-transform: translateZ(-2000px) translateX(1900px) rotateY(-45deg);
+          transform: translateZ(-2000px) translateX(1900px) rotateY(-45deg);
+  background-color: black;
+  z-index: -20;
+  /*значение z-index будет увеличиваться от -1 до -36*/
+  -webkit-box-shadow: 0 0 3px 5px black;
+          box-shadow: 0 0 3px 5px black;
+}
+
+#row div:nth-child(21) {
+  /*знак & указывает где должен быть вставлен родительский селектор, то есть div*/
+  -webkit-transform: translateZ(-2100px) translateX(2000px) rotateY(-45deg);
+          transform: translateZ(-2100px) translateX(2000px) rotateY(-45deg);
+  background-color: black;
+  z-index: -21;
+  /*значение z-index будет увеличиваться от -1 до -36*/
+  -webkit-box-shadow: 0 0 3px 5px black;
+          box-shadow: 0 0 3px 5px black;
+}
+
+#row div:nth-child(22) {
+  /*знак & указывает где должен быть вставлен родительский селектор, то есть div*/
+  -webkit-transform: translateZ(-2200px) translateX(2100px) rotateY(-45deg);
+          transform: translateZ(-2200px) translateX(2100px) rotateY(-45deg);
+  background-color: black;
+  z-index: -22;
+  /*значение z-index будет увеличиваться от -1 до -36*/
+  -webkit-box-shadow: 0 0 3px 5px black;
+          box-shadow: 0 0 3px 5px black;
+}
+
+#row div:nth-child(23) {
+  /*знак & указывает где должен быть вставлен родительский селектор, то есть div*/
+  -webkit-transform: translateZ(-2300px) translateX(2200px) rotateY(-45deg);
+          transform: translateZ(-2300px) translateX(2200px) rotateY(-45deg);
+  background-color: black;
+  z-index: -23;
+  /*значение z-index будет увеличиваться от -1 до -36*/
+  -webkit-box-shadow: 0 0 3px 5px black;
+          box-shadow: 0 0 3px 5px black;
+}
+
+#row div:nth-child(24) {
+  /*знак & указывает где должен быть вставлен родительский селектор, то есть div*/
+  -webkit-transform: translateZ(-2400px) translateX(2300px) rotateY(-45deg);
+          transform: translateZ(-2400px) translateX(2300px) rotateY(-45deg);
+  background-color: black;
+  z-index: -24;
+  /*значение z-index будет увеличиваться от -1 до -36*/
+  -webkit-box-shadow: 0 0 3px 5px black;
+          box-shadow: 0 0 3px 5px black;
+}
+
+#row div:nth-child(25) {
+  /*знак & указывает где должен быть вставлен родительский селектор, то есть div*/
+  -webkit-transform: translateZ(-2500px) translateX(2400px) rotateY(-45deg);
+          transform: translateZ(-2500px) translateX(2400px) rotateY(-45deg);
+  background-color: black;
+  z-index: -25;
+  /*значение z-index будет увеличиваться от -1 до -36*/
+  -webkit-box-shadow: 0 0 3px 5px black;
+          box-shadow: 0 0 3px 5px black;
+}
+
+#row div:nth-child(26) {
+  /*знак & указывает где должен быть вставлен родительский селектор, то есть div*/
+  -webkit-transform: translateZ(-2600px) translateX(2500px) rotateY(-45deg);
+          transform: translateZ(-2600px) translateX(2500px) rotateY(-45deg);
+  background-color: black;
+  z-index: -26;
+  /*значение z-index будет увеличиваться от -1 до -36*/
+  -webkit-box-shadow: 0 0 3px 5px black;
+          box-shadow: 0 0 3px 5px black;
+}
+
+#row div:nth-child(27) {
+  /*знак & указывает где должен быть вставлен родительский селектор, то есть div*/
+  -webkit-transform: translateZ(-2700px) translateX(2600px) rotateY(-45deg);
+          transform: translateZ(-2700px) translateX(2600px) rotateY(-45deg);
+  background-color: black;
+  z-index: -27;
+  /*значение z-index будет увеличиваться от -1 до -36*/
+  -webkit-box-shadow: 0 0 3px 5px black;
+          box-shadow: 0 0 3px 5px black;
+}
+
+#row div:nth-child(28) {
+  /*знак & указывает где должен быть вставлен родительский селектор, то есть div*/
+  -webkit-transform: translateZ(-2800px) translateX(2700px) rotateY(-45deg);
+          transform: translateZ(-2800px) translateX(2700px) rotateY(-45deg);
+  background-color: black;
+  z-index: -28;
+  /*значение z-index будет увеличиваться от -1 до -36*/
+  -webkit-box-shadow: 0 0 3px 5px black;
+          box-shadow: 0 0 3px 5px black;
+}
+
+#row div:nth-child(29) {
+  /*знак & указывает где должен быть вставлен родительский селектор, то есть div*/
+  -webkit-transform: translateZ(-2900px) translateX(2800px) rotateY(-45deg);
+          transform: translateZ(-2900px) translateX(2800px) rotateY(-45deg);
+  background-color: black;
+  z-index: -29;
+  /*значение z-index будет увеличиваться от -1 до -36*/
+  -webkit-box-shadow: 0 0 3px 5px black;
+          box-shadow: 0 0 3px 5px black;
+}
+
+#row div:nth-child(30) {
+  /*знак & указывает где должен быть вставлен родительский селектор, то есть div*/
+  -webkit-transform: translateZ(-3000px) translateX(2900px) rotateY(-45deg);
+          transform: translateZ(-3000px) translateX(2900px) rotateY(-45deg);
+  background-color: black;
+  z-index: -30;
+  /*значение z-index будет увеличиваться от -1 до -36*/
+  -webkit-box-shadow: 0 0 3px 5px black;
+          box-shadow: 0 0 3px 5px black;
+}
+
+#row div:nth-child(31) {
+  /*знак & указывает где должен быть вставлен родительский селектор, то есть div*/
+  -webkit-transform: translateZ(-3100px) translateX(3000px) rotateY(-45deg);
+          transform: translateZ(-3100px) translateX(3000px) rotateY(-45deg);
+  background-color: black;
+  z-index: -31;
+  /*значение z-index будет увеличиваться от -1 до -36*/
+  -webkit-box-shadow: 0 0 3px 5px black;
+          box-shadow: 0 0 3px 5px black;
+}
+
+#row div:nth-child(32) {
+  /*знак & указывает где должен быть вставлен родительский селектор, то есть div*/
+  -webkit-transform: translateZ(-3200px) translateX(3100px) rotateY(-45deg);
+          transform: translateZ(-3200px) translateX(3100px) rotateY(-45deg);
+  background-color: black;
+  z-index: -32;
+  /*значение z-index будет увеличиваться от -1 до -36*/
+  -webkit-box-shadow: 0 0 3px 5px black;
+          box-shadow: 0 0 3px 5px black;
+}
+
+#row div:nth-child(33) {
+  /*знак & указывает где должен быть вставлен родительский селектор, то есть div*/
+  -webkit-transform: translateZ(-3300px) translateX(3200px) rotateY(-45deg);
+          transform: translateZ(-3300px) translateX(3200px) rotateY(-45deg);
+  background-color: black;
+  z-index: -33;
+  /*значение z-index будет увеличиваться от -1 до -36*/
+  -webkit-box-shadow: 0 0 3px 5px black;
+          box-shadow: 0 0 3px 5px black;
+}
+
+#row div:nth-child(34) {
+  /*знак & указывает где должен быть вставлен родительский селектор, то есть div*/
+  -webkit-transform: translateZ(-3400px) translateX(3300px) rotateY(-45deg);
+          transform: translateZ(-3400px) translateX(3300px) rotateY(-45deg);
+  background-color: black;
+  z-index: -34;
+  /*значение z-index будет увеличиваться от -1 до -36*/
+  -webkit-box-shadow: 0 0 3px 5px black;
+          box-shadow: 0 0 3px 5px black;
+}
+
+#row div:nth-child(35) {
+  /*знак & указывает где должен быть вставлен родительский селектор, то есть div*/
+  -webkit-transform: translateZ(-3500px) translateX(3400px) rotateY(-45deg);
+          transform: translateZ(-3500px) translateX(3400px) rotateY(-45deg);
+  background-color: black;
+  z-index: -35;
+  /*значение z-index будет увеличиваться от -1 до -36*/
+  -webkit-box-shadow: 0 0 3px 5px black;
+          box-shadow: 0 0 3px 5px black;
+}
+
+#row div:nth-child(36) {
+  /*знак & указывает где должен быть вставлен родительский селектор, то есть div*/
+  -webkit-transform: translateZ(-3600px) translateX(3500px) rotateY(-45deg);
+          transform: translateZ(-3600px) translateX(3500px) rotateY(-45deg);
+  background-color: black;
+  z-index: -36;
+  /*значение z-index будет увеличиваться от -1 до -36*/
+  -webkit-box-shadow: 0 0 3px 5px black;
+          box-shadow: 0 0 3px 5px black;
+}
+/*# sourceMappingURL=3d.css.map */
